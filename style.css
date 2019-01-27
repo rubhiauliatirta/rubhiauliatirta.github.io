@@ -1,0 +1,431 @@
+/*#region Flex Layout CSS*/
+.horizontal-flex{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+}
+.vertical-flex{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: center;
+
+}
+.sub-caption{
+    top: 40px;
+    left: 40px;
+}
+.vertical-line{
+    background: #850000;
+    display: block;
+    height: 100px; 
+    width: 2px;
+    border-radius: 10%;
+}
+body{
+    margin: 0;
+}
+#masterpiece-body{
+    background-color: #850000;
+    /* background-image: url("./images/bg_resume1.png");
+    background-repeat: repeat;
+    background-size: 300px; */
+}
+/* #contact-body{
+    background: #850000;
+    background-image: url("./images/bg_resume1");
+    margin: 0;
+} */
+
+.font-caption{
+    width: 50%;
+    position: relative;  
+    font-family: Arial, Helvetica, sans-serif;
+}
+.button{
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 15px;
+    background: #850000;
+    color: whitesmoke;
+    font-family: Verdana, Geneva, sans-serif;
+    font-size: 14px;
+}
+.button:hover{
+    background: whitesmoke;
+    color: #850000;
+    border: 2px solid #850000 
+}
+
+/*#endregion Flex Layout CSS*/
+
+/*#region Header CSS*/
+#navigation-bar{
+    background: black;
+    position: fixed;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    z-index: 2;
+}
+#navigation-bar-contact{
+    background: black;
+    position: static;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    z-index: 2;
+}
+#menu{
+    margin-right: 10px;
+    font-family: Verdana, Geneva, sans-serif;
+    font-size: 14px;
+}
+#menu a{
+    margin-right: 5px;
+}
+#menu a:hover{
+    border-bottom: 2px solid #850000;
+    /* color: rgb(133, 0, 0);
+    text-decoration: rgb(133, 0, 0); */
+}
+
+#logo img{
+    width: 50px;
+    height: 50px;  
+    margin-left: 15px;
+}
+#logo h2{
+    color: whitesmoke;
+    margin-left: 5px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.nav-button{
+    text-transform: uppercase;
+    padding: 5px;
+    color:whitesmoke;
+    text-decoration: none;
+}
+/*#endregion Header CSS*/
+
+/*#region Banner*/
+#banner-container{
+    
+    width: 100%;
+    position: relative;
+    height: 600px;
+    /* top: 66px; */
+    background-size: cover;
+	margin: 0 0;
+}
+
+.fling-minislide {
+    width: 100%;
+    height: 600px; 
+    overflow: hidden;
+    position: absolute;
+
+}
+.fling-minislide img{
+    position:absolute; 
+    animation:fling-minislide 20s infinite; 
+    opacity:0; 
+    object-fit: contain;
+    width: 100%; 
+    height: auto;
+}
+#banner-mask{
+  
+    background: #850000;
+    opacity: 0.90;
+    position:relative;
+    width: 100%; 
+    height: 600px;
+    z-index: 1;
+}
+
+#profpic{
+    border-radius: 50%;
+    width: 20%;
+    border: 5px solid black;
+    box-shadow: 5px 5px 10px;
+}
+.white-caption{  
+    color: whitesmoke;
+    opacity: 1;
+    text-shadow: 0px 0px 20px #000000;
+}
+
+
+@keyframes fling-minislide {25%{opacity:1;} 40%{opacity:0;}}
+.fling-minislide img:nth-child(1){animation-delay:0s;}
+.fling-minislide img:nth-child(2){animation-delay:5s;}
+.fling-minislide img:nth-child(3){animation-delay:10s;}
+.fling-minislide img:nth-child(4){animation-delay:15s;}
+/*#endregion Banner*/
+
+/*#region About Me*/
+#aboutme-container h1{
+    color: black;
+    opacity: 1;
+    overflow: hidden;
+    width: 30%;
+}
+#aboutme-container img{ 
+    box-shadow: 5px 5px 10px;  
+    width: auto;
+    height: 400px;      
+}
+
+#aboutme-content{
+    padding: 50px;
+    overflow: hidden;
+}
+#aboutme-content p{   
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        font-size: 15px;       
+}
+#aboutme-content div{
+    position: relative;
+    margin-left: 40px;
+}
+
+/*#endregion About Me*/
+
+/*#region Testimonials*/
+#testimonials-container{
+    background: #850000;
+}
+#testimonials-content{
+    font-family: 'Dancing Script', cursive;
+    font-size: 24px;
+    padding: 50px;
+    width: 40%;
+    height: fit-content;
+    margin: 0 auto;
+    align-items: flex-start;
+}
+.testi-img{
+    border: 2px solid #000000;
+    border-radius: 50%;
+    width: 75px;
+    height: 75px;
+    box-shadow: 5px 5px 10px #000000;
+}
+
+#left{
+    margin: 5px;
+    justify-content:flex-start;
+    color: whitesmoke;
+}
+#right{
+    font-family: 'Dancing Script', cursive;
+    color: whitesmoke;
+    margin: 5px;
+    justify-content:flex-end;
+    flex-direction: row-reverse;
+}
+/*#endregion*/
+
+/*#region Footer*/
+footer{
+    z-index: 20;
+    background: #000000;
+    width: 100%;
+    color:whitesmoke;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.footer-icon{
+    margin: 0px 5px 5px 5px;
+    width: 25px;
+    height: 25px;
+}
+/*#endregion*/
+
+/*#region contact*/
+
+#message-info{
+    margin: 5px;
+    align-self: flex-start;
+}
+#message-info input{
+    margin: 5px 5px 5px 0px;
+} 
+#contact-page{
+    position: static;
+    width: 100%;
+    overflow-y: hidden;
+    height: 100%;
+    background: #850000;
+    align-content: center;
+}
+#form-container{
+    box-shadow: 5px 5px 10px;
+    
+    border-radius: 10px;
+    margin: 50px auto;
+    width: 40%;
+    height: fit-content;
+    overflow: hidden;
+    clear: both;
+    background: whitesmoke;
+    opacity: 0.9;
+    
+}
+#submit-button{
+    margin: 5px 0 10px 0;
+    align-self: flex-end;
+}
+/*#endregion*/
+
+/*#region masterpiece*/
+#masterpiece-nav{
+    border-radius: 10px;
+    padding: 10px 15px;
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    top: 80px;
+    left: 20px;
+    width: 200px;
+    background: whitesmoke;
+    opacity: 0.9;
+    font-family: Verdana, Geneva, sans-serif;
+    font-size: 14px;
+    box-shadow: 5px 5px 10px;
+    
+}
+#masterpiece-nav a{
+    margin-top: 5px; 
+    color: #000000;
+    text-decoration: none;
+}
+#masterpiece-nav a:hover{
+    margin-top: 5px; 
+    color: #850000;
+    text-decoration: none;
+    border-bottom: 2 px solid #850000;
+}
+.masterpiece-content{
+    position: relative;
+    box-shadow: 5px 5px 10px;
+    background: whitesmoke;
+    opacity: 0.9;
+    top: 80px;
+    margin-left: 270px;
+    margin-right: 20px;
+    margin-bottom: 90px;
+    overflow: hidden;
+    border-radius: 10px;
+    padding-bottom: 90px;
+    padding-left: 20px; 
+    padding-right: 20px; 
+
+}
+
+.masterpiece-content h1{
+    color: black;
+}
+#breakline{
+    width: 100%;
+    border-bottom: 3px solid #850000;
+}
+
+#masterpiece_item_content {
+    margin-left: 10px; 
+}
+#masterpiece_item_text {
+    margin: 0 10px; 
+}
+#masterpiece_item_text p{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 15px;  
+}
+
+#masterpiece_item_content{
+    margin-top: 10px;
+}
+#masterpiece_item_content img{
+    width: 200px;
+    height: 200px;
+    object-fit: contain;
+}
+.vertical-line{
+    margin-left:20px;
+    border-right: 2px solid #850000; 
+    height: 150px;
+}
+.year{
+    font-size: 15px;
+    font-weight: bold;
+}
+.tags{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 13px;  
+    background: #000000;
+    color: whitesmoke;
+    margin-left:3px;
+    padding: 2px 8px;  
+    border-radius: 20px;
+    text-decoration: none;
+}
+.soundcloud{
+    margin: 10px;
+    
+}
+
+
+/*#endregion*/
+
+/*#region resume*/
+
+#resume-body{
+    background-image: url("./images/bg_resume1.png");
+    background-size: 300px;
+    background-repeat: repeat;
+}
+
+.blank{
+    width: 100%;
+    height: 75px;
+}
+#sorry-content{
+    width: 650px;
+    height: 100%;
+    padding: 10px;
+    margin: 0 auto;
+    background: #850000;
+    text-align: center;
+    box-shadow: 5px 5px 10px #000000
+}
+#image-sorry{
+    width: 200px;
+    height: 200px;
+}
+
+#sorry-content h5{ 
+    font-family: Verdana, Geneva, sans-serif;
+    color: whitesmoke;
+    
+}
+#sorry-content h3{ 
+    font-family: Verdana, Geneva, sans-serif;
+    color: whitesmoke;
+    
+}
+/*#endregion*/
+
+/*#region font*/
+@font-face {
+    font-family: 'Dancing Script';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Dancing Script Regular'), local('DancingScript-Regular'), url(https://fonts.gstatic.com/s/dancingscript/v9/If2RXTr6YS-zF4S-kcSWSVi_szLgiuE.woff2) format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/*#endregion font*/
+
+/*#region name*/
+/*#endregion*/

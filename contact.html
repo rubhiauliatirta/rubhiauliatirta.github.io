@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <title>Contact Me! | rubhiauliatirta.com</title>
+    <link rel="stylesheet" type="text/css" href="./style.css" />
+</head>
+
+<body id="contact-body">
+    <header>
+        <div id="navigation-bar-contact" class="horizontal-flex">
+            <div id="logo" class="horizontal-flex">
+                <img src="./images/logo.png" alt="logo.png" />
+                <h2>rubhiauliatirta.com</h2>
+            </div>
+            <div id="menu" class="horizontal-flex">
+                <a class="nav-button" href="./index.html">Home</a>
+                <a class="nav-button" href="./resume.html" >Resume</a>
+                <a class="nav-button" href="./masterpiece.html">Masterpieces</a>
+                <a class="nav-button" href="http://rubhiauliatirta.blogspot.com/" target="_blank">Blog</a>
+                <a class="nav-button" href="./contact.html">Contact</a>
+            </div>
+        </div>
+    </header>
+    <main id="contact-page">
+        <div class="vertical-flex" id="form-container">
+            <h1 class="font-caption ">Leave a message</h1>
+            <form id-"message" class="vertical-flex" action="./index.html" target="_blank" method="POST" onsubmit="alert('Terima Kasih!')">
+                <div id="message-info">
+                        <input id="name"type="text" name="name" placeholder="Name" required><br>
+                        <input id="email" type="email" name="email" placeholder="example@email.com" required>
+                </div>              
+                <textarea name="text_input" cols="40" rows="10" placeholder="Type your message here..." required></textarea>
+                <input id="submit-button" class="button" type="submit" value="Submit"/>
+            </form>
+        </div>
+    </main>
+    <footer class="vertical-flex">
+        <br>
+        <h5>Design by Rubhi &copy; 2019</h5>
+        <br>
+        <h5>Find me on:</h5>
+        <div class="horizontal-flex">
+            <a href="https://web.facebook.com/rubhiaulia">
+                <img class="footer-icon" src="https://cdn4.iconfinder.com/data/icons/social-media-icons-the-circle-set/48/facebook_circle-512.png"/>
+            </a>
+            <a href="https://twitter.com/rubhiauliatirta">
+                <img class="footer-icon" src="https://cdn3.iconfinder.com/data/icons/social-icons-5/607/Twitterbird.png"/>
+            </a>
+            <a href="https://github.com/rubhiauliatirta">
+                <img class="footer-icon" src="https://cdn3.iconfinder.com/data/icons/sociocons/256/github-sociocon.png"/>
+            </a>
+            <a href="https://www.instagram.com/rubhiauliatirta/">
+                <img class="footer-icon" src="https://d3iqwsql9z4qvn.cloudfront.net/wp-content/uploads/sites/2/2018/07/27173515/instagram-colourful-icon-300x296.png"/>
+            </a>
+            <a href="https://soundcloud.com/rubhiauliatirta">
+                <img class="footer-icon" src="http://www.stickpng.com/assets/images/58e91984eb97430e819064f9.png"/>
+            </a>
+        </div>
+    </footer>
+</body>
+
+</html>
